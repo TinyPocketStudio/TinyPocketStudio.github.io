@@ -1,29 +1,32 @@
 /* Tiny Pocket Studio — shared styles for every page */
 
+/* Palette: autumn street. Golden foliage, sandstone facades,
+   dark branches and a pale sky. */
 :root {
-    --bg: #FFF8EE;
-    --surface: #FFFFFF;
-    --surface-alt: #F6EBDD;
-    --ink: #4A2F25;
-    --ink-soft: #7A5A4A;
-    --line: #EADCCB;
-    --sage: #8BA66F;
-    --sage-deep: #56713F;
-    --blush: #F2A7A3;
-    --honey: #F6D7B0;
-    --btn-bg: var(--sage-deep);
-    --btn-ink: #FFFFFF;
-    --link: var(--sage-deep);
-    --focus: #C2603F;
+    --bg: #FBF3E4;          /* parchment */
+    --surface: #FFFBF3;
+    --surface-alt: #EFE0C4; /* sandstone */
+    --ink: #33231A;         /* branch bark */
+    --ink-soft: #6B5240;
+    --line: #E2CFAE;
+    --gold: #E3A33B;        /* foliage */
+    --amber: #8E4C0E;       /* deep amber: buttons, links, labels */
+    --rust: #C7652A;
+    --honey: #F4C46A;       /* warm glow */
+    --sky: #BCD0DC;
+    --btn-bg: var(--amber);
+    --btn-ink: #FFF8EC;
+    --link: var(--amber);
+    --focus: #2F5A78;
     --logo-plate: transparent;
 
     /* Each app page overrides these */
-    --app-accent: var(--sage-deep);
-    --app-accent-ink: #FFFFFF;
-    --app-tint: #EEF3E6;
+    --app-accent: var(--amber);
+    --app-accent-ink: #FFF8EC;
+    --app-tint: #F7E6C4;
 
-    --shadow-1: 0 2px 6px rgba(74, 47, 37, 0.06), 0 8px 24px rgba(74, 47, 37, 0.07);
-    --shadow-2: 0 4px 10px rgba(74, 47, 37, 0.08), 0 16px 40px rgba(74, 47, 37, 0.12);
+    --shadow-1: 0 2px 6px rgba(51, 35, 26, 0.06), 0 8px 24px rgba(51, 35, 26, 0.08);
+    --shadow-2: 0 4px 10px rgba(51, 35, 26, 0.09), 0 16px 40px rgba(51, 35, 26, 0.14);
     --radius: 24px;
     --radius-sm: 16px;
 
@@ -31,47 +34,15 @@
     --font-body: 'Nunito', system-ui, -apple-system, 'Segoe UI', sans-serif;
 
     --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
-    color-scheme: light dark;
+    /* Always light, even when the visitor's device is in dark mode */
+    color-scheme: light;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --bg: #1E1613;
-        --surface: #2A201B;
-        --surface-alt: #33271F;
-        --ink: #FBEFE2;
-        --ink-soft: #D6C1B0;
-        --line: #45362C;
-        --sage: #8BA66F;
-        --sage-deep: #A9C48C;
-        --blush: #E9918C;
-        --honey: #6B5038;
-        --btn-bg: #A9C48C;
-        --btn-ink: #1E1613;
-        --link: #B9D29D;
-        --focus: #F2A7A3;
-        --logo-plate: #FFF8EE;
-        --app-accent: #A9C48C;
-        --app-accent-ink: #1E1613;
-        --app-tint: #2E3326;
-        --shadow-1: 0 2px 6px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.25);
-        --shadow-2: 0 4px 10px rgba(0, 0, 0, 0.35), 0 16px 40px rgba(0, 0, 0, 0.35);
-    }
-}
-
-/* Spendzi */
+/* Spendzi: autumn orange from the app's Leaves theme */
 .app-spendzi {
-    --app-accent: #23785A;
-    --app-accent-ink: #FFFFFF;
-    --app-tint: #E3F2EA;
-}
-
-@media (prefers-color-scheme: dark) {
-    .app-spendzi {
-        --app-accent: #6FD3A8;
-        --app-accent-ink: #10221A;
-        --app-tint: #1F3229;
-    }
+    --app-accent: #B4531A;
+    --app-accent-ink: #FFF8EC;
+    --app-tint: #FBE3CC;
 }
 
 /* Base */
@@ -200,7 +171,7 @@ a {
     font-size: 14px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--sage-deep);
+    color: var(--amber);
     margin-bottom: 10px;
 }
 
@@ -376,15 +347,15 @@ a {
     position: absolute;
     width: 64px;
     height: 64px;
-    fill: var(--sage);
-    opacity: 0.55;
+    fill: var(--gold);
+    opacity: 0.7;
     pointer-events: none;
 }
 
 .leaf-1 { top: 18%; left: 6%; transform: rotate(-20deg); }
-.leaf-2 { top: 58%; left: 12%; width: 40px; height: 40px; transform: rotate(40deg); opacity: 0.4; }
+.leaf-2 { top: 58%; left: 12%; width: 40px; height: 40px; transform: rotate(40deg); fill: var(--rust); opacity: 0.55; }
 .leaf-3 { top: 22%; right: 7%; transform: rotate(100deg); }
-.leaf-4 { top: 64%; right: 13%; width: 44px; height: 44px; transform: rotate(160deg); opacity: 0.4; }
+.leaf-4 { top: 64%; right: 13%; width: 44px; height: 44px; transform: rotate(160deg); fill: var(--rust); opacity: 0.55; }
 
 .blob {
     position: absolute;
@@ -626,7 +597,7 @@ a.app-card:hover {
 
     .app-card-soon .icon-bubble {
         background: var(--surface);
-        color: var(--sage-deep);
+        color: var(--amber);
         width: 72px;
         height: 72px;
         border-radius: 22%;
@@ -684,11 +655,11 @@ a.app-card:hover {
     font-family: var(--font-head);
     font-weight: 600;
     font-size: 32px;
-    color: #4A2F25;
+    color: #33231A;
 }
 
-.avatar-sage { background: #CFE0BD; }
-.avatar-blush { background: #F8D2CF; }
+.avatar-gold { background: #F3D08E; }
+.avatar-sky { background: #CADBE6; }
 
 .team-member h3 {
     font-size: 22px;
