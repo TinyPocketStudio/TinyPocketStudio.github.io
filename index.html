@@ -2,114 +2,190 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tiny Pocket Studio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Tiny Pocket Studio is a two-person indie studio in Sweden making small, cozy apps for everyday life.">
+    <link rel="icon" href="/Assets/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script>document.documentElement.classList.add('js')</script>
+    <script src="/site.js" defer></script>
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <section class="section hero">
-        <div class="section-inner">
-            <div class="logo-placeholder">
-                <img src="Assets/Logo.png" alt="Tiny Pocket Studio" class="logo-image">
-            </div>
-            <a href="#apps" class="arrow-down" aria-label="Scroll down">
-                <svg viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M6 9l6 6 6-6" />
-                </svg>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="/" aria-label="Tiny Pocket Studio home">
+                <img src="/Assets/Logo.png" alt="" width="792" height="410">
             </a>
+            <nav class="site-nav" aria-label="Main">
+                <a href="#apps">Apps</a>
+                <a href="#about">About</a>
+                <a class="nav-optional" href="#contact">Contact</a>
+            </nav>
         </div>
-    </section>
+    </header>
 
-    <section id="apps" class="section apps-section">
-        <div class="section-inner">
-            <h2>Our Apps</h2>
+    <main id="main">
 
-            <article class="app-card-full left">
-                <div class="app-card-header">
-                    <img src="Assets/DaySync.png" class="app-image" alt="DaySync">
-                    <div class="app-info">
-                        <h3>DaySync</h3>
-                        <p>Your calendar, without the chaos.</p>
-                    </div>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="blob" style="width:420px;height:420px;top:-80px;left:-120px" aria-hidden="true"></div>
+            <div class="blob" style="width:360px;height:360px;bottom:-120px;right:-80px;background:var(--blush);opacity:.3" aria-hidden="true"></div>
+            <svg class="leaf leaf-1" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 22C2 10 10 2 22 2c0 12-8 20-20 20z"/></svg>
+            <svg class="leaf leaf-2" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 22C2 10 10 2 22 2c0 12-8 20-20 20z"/></svg>
+            <svg class="leaf leaf-3" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 22C2 10 10 2 22 2c0 12-8 20-20 20z"/></svg>
+            <svg class="leaf leaf-4" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 22C2 10 10 2 22 2c0 12-8 20-20 20z"/></svg>
+
+            <div class="container">
+                <img class="hero-logo" src="/Assets/Logo.png" alt="Tiny Pocket Studio" width="792" height="410" fetchpriority="high">
+                <h1>Small apps for everyday life, made with care.</h1>
+                <p class="hero-lead">We're a tiny two-person studio in Sweden building simple, friendly apps that fit in your pocket and respect your privacy.</p>
+                <div class="actions">
+                    <a class="btn" href="#apps">
+                        See our apps
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+                    </a>
+                    <a class="btn btn-ghost" href="#about">About us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Apps -->
+        <section id="apps" class="section section-alt">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Our apps</span>
+                    <h2>Made in our pocket, for yours</h2>
+                    <p>Every app we make is small, focused and calm to use.</p>
                 </div>
 
-                <div class="feature-rows">
-                    <div class="feature-row">
-                        <h3>📝 Notes That Bring People Together</h3>
-                        <p>The best plans aren't made alone. Add a note to any event and share it instantly. Coordinating dinner, planning a trip, or just leaving a reminder for someone who matters. Everyone sees it. Everyone's on the same page.</p>
+                <!-- Featured app -->
+                <article class="featured app-spendzi reveal" aria-labelledby="spendzi-title">
+                    <div>
+                        <div class="app-title">
+                            <span class="app-icon app-icon-padded"><img src="/Assets/Spendzi_Logo.png" alt="" width="432" height="432"></span>
+                            <div>
+                                <span class="chip chip-app">New</span>
+                                <h3 id="spendzi-title">Spendzi</h3>
+                            </div>
+                        </div>
+                        <p class="app-tagline">Know where your money goes, without the spreadsheet.</p>
+
+                        <ul class="feature-list">
+                            <li>
+                                <span class="icon-bubble"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>
+                                <div><strong>Log in seconds</strong><span>Add an expense with a couple of taps.</span></div>
+                            </li>
+                            <li>
+                                <span class="icon-bubble"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg></span>
+                                <div><strong>See the big picture</strong><span>Totals for the day, week, month and year.</span></div>
+                            </li>
+                            <li>
+                                <span class="icon-bubble"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+                                <div><strong>Private by design</strong><span>No account. Your data stays on your phone.</span></div>
+                            </li>
+                        </ul>
+
+                        <div class="actions">
+                            <a class="btn btn-app" href="/spendzi/">
+                                Learn more
+                                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </a>
+                            <span class="chip">
+                                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                Coming soon to Google Play &amp; App Store
+                            </span>
+                        </div>
                     </div>
 
-                    <div class="feature-row">
-                        <h3>🤝 One Shared Space, Made for Real Life</h3>
-                        <p>Invite family, friends, whoever you actually coordinate with and plan together in one place built for how people really share their time.</p>
+                    <div class="featured-art" aria-hidden="true">
+                        <div class="phone"><img src="/Assets/Preview_leaves.png" alt="" width="360" height="780" loading="lazy"></div>
+                        <div class="phone"><img src="/Assets/Preview_spring.png" alt="" width="360" height="780" loading="lazy"></div>
                     </div>
+                </article>
 
-                    <div class="feature-row">
-                        <h3>🔔 Nudges, Not Just Notes</h3>
-                        <p>Send a reminder to anyone on your shared calendar and it shows up as a real notification on their phone. No more "did you see my text?"</p>
+                <!-- All apps: add one card per app -->
+                <h3 class="eyebrow app-grid-title">All apps</h3>
+                <div class="app-grid">
+                    <a class="app-card app-spendzi reveal" href="/spendzi/">
+                        <span class="app-icon app-icon-padded"><img src="/Assets/Spendzi_Logo.png" alt="" width="432" height="432" loading="lazy"></span>
+                        <h3>Spendzi</h3>
+                        <p>Simple, private expense tracking.</p>
+                        <span class="more">View app <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+                    </a>
+
+                    <div class="app-card app-card-soon reveal">
+                        <span class="icon-bubble"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/><path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/></svg></span>
+                        <h3>Something new is growing</h3>
+                        <p>Our next app is sprouting. Check back soon.</p>
                     </div>
                 </div>
-            </article>
+            </div>
+        </section>
 
-            <article class="app-card right">
-                <img src="Assets/DaySync.png" class="app-image" alt="DaySync">
-
-                <div class="app-info">
-                    <h3>Budget App</h3>
-                    <p>Coming soon.</p>
+        <!-- About -->
+        <section id="about" class="section">
+            <div class="container about-grid">
+                <div class="about-text reveal">
+                    <span class="eyebrow">About us</span>
+                    <h2>A tiny studio with big care for little details</h2>
+                    <p>Tiny Pocket Studio is the two of us: one who writes the code and one who draws everything you see. We build the apps we wish we had: focused, friendly and free of clutter.</p>
+                    <p>We keep things small on purpose, so every app gets our full attention, and we don't collect data we don't need.</p>
                 </div>
-            </article>
-
-            <article class="app-card left">
-                <img src="Assets/DaySync.png" class="app-image" alt="DaySync">
-
-                <div class="app-info">
-                    <h3>Coming soon</h3>
-                    <p>Stay tuned!.</p>
-                </div>
-            </article>
-
-        </div>
-    </section>
-
-    <section id="about" class="section">
-        <div class="section-inner">
-            <h2>About Us</h2>
-
-            <div class="team">
-                <div class="team-member">
-                    <div class="avatar-placeholder">👤</div>
-                    <div class="team-info">
+                <div class="team">
+                    <div class="team-member reveal">
+                        <div class="avatar avatar-sage" aria-hidden="true">N</div>
                         <h3>Natdanai</h3>
                         <p>Coder &amp; builder of the things you tap</p>
                     </div>
-                </div>
-
-                <div class="team-member">
-                    <div class="avatar-placeholder">👤</div>
-                    <div class="team-info">
+                    <div class="team-member reveal">
+                        <div class="avatar avatar-blush" aria-hidden="true">S</div>
                         <h3>Stephanie</h3>
                         <p>Artist &amp; keeper of the little details</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <section class="section contact">
-        <div class="section-inner">
-            <h2>Contact Us</h2>
-            <div class="social-icons">
-                <a href="#" aria-label="Instagram">📷</a>
-                <a href="#" aria-label="Email">✉️</a>
-                <a href="#" aria-label="TikTok">🎵</a>
+    <footer id="contact" class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>Say hi!</h2>
+                    <p>Questions, feedback or just want to share a cute idea? We read every message.</p>
+                </div>
+                <div class="footer-links">
+                    <div>
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="mailto:tinypocketstudio@gmail.com"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>tinypocketstudio@gmail.com</a></li>
+                            <li><a href="https://www.instagram.com/tinypocket.studio/" rel="me noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg>Instagram</a></li>
+                            <li><a href="https://www.tiktok.com/@tinypocketstudio" rel="me noopener"><svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>TikTok</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Apps</h3>
+                        <ul>
+                            <li><a href="/spendzi/">Spendzi</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="/privacy/">Privacy policies</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <footer>
-                <p>&copy; 2026 Tiny Pocket Studio</p>
-            </footer>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tiny Pocket Studio · Made with care in Sweden</p>
+            </div>
         </div>
-    </section>
-
+    </footer>
 </body>
 </html>

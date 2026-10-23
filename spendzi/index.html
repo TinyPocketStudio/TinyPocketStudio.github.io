@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spendzi · Tiny Pocket Studio</title>
+    <meta name="description" content="Spendzi is a simple, private expense tracker. No account, no ads, and your data never leaves your phone.">
+    <link rel="icon" href="/Assets/Spendzi_Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script>document.documentElement.classList.add('js')</script>
+    <script src="/site.js" defer></script>
+</head>
+<body class="app-spendzi">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="/" aria-label="Tiny Pocket Studio home">
+                <img src="/Assets/Logo.png" alt="" width="792" height="410">
+            </a>
+            <nav class="site-nav" aria-label="Main">
+                <a href="/#apps" aria-current="page">Apps</a>
+                <a href="/#about">About</a>
+                <a class="nav-optional" href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="app-hero">
+            <div class="blob" style="width:420px;height:420px;top:-120px;right:-100px;background:var(--app-tint);opacity:1;filter:none" aria-hidden="true"></div>
+            <div class="container">
+                <div>
+                    <a class="breadcrumb" href="/#apps">
+                        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+                        All apps
+                    </a>
+                    <span class="app-icon app-icon-lg app-icon-padded" style="margin-bottom:24px"><img src="/Assets/Spendzi_Logo.png" alt="Spendzi app icon" width="432" height="432"></span>
+                    <h1>Spendzi</h1>
+                    <p class="app-tagline">Know where your money goes, without the spreadsheet.</p>
+
+                    <!-- When the listings are live, replace these chips with the official
+                         Google Play and App Store badges linking to the store pages. -->
+                    <div class="store-row">
+                        <span class="chip chip-app">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            Google Play: coming soon
+                        </span>
+                        <span class="chip chip-app">
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            App Store: coming soon
+                        </span>
+                    </div>
+                </div>
+
+                <div class="featured-art" aria-hidden="true">
+                    <div class="phone"><img src="/Assets/Preview_leaves.png" alt="" width="360" height="780" fetchpriority="high"></div>
+                    <div class="phone"><img src="/Assets/Preview_spring.png" alt="" width="360" height="780"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-alt" aria-labelledby="features-title">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Features</span>
+                    <h2 id="features-title">Everything you need, nothing you don't</h2>
+                </div>
+
+                <div class="feature-grid">
+                    <div class="feature-card reveal">
+                        <span class="icon-bubble"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>
+                        <h3>Log in seconds</h3>
+                        <p>Add an expense with a couple of taps, right when you spend.</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <span class="icon-bubble"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg></span>
+                        <h3>See the big picture</h3>
+                        <p>Totals for today, this week, this month and the whole year, right next to your calendar.</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <span class="icon-bubble"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></span>
+                        <h3>Works offline</h3>
+                        <p>No internet needed. Everything runs right on your phone.</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <span class="icon-bubble"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m17 8 5 5"/><path d="m22 8-5 5"/></svg></span>
+                        <h3>No account needed</h3>
+                        <p>Open the app and start. No sign-up, no email, no passwords.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="themes-title">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Themes</span>
+                    <h2 id="themes-title">Make it feel like yours</h2>
+                    <p>Pick a look that matches your mood, or the season.</p>
+                </div>
+
+                <div class="theme-grid">
+                    <figure class="reveal">
+                        <div class="phone"><img src="/Assets/Preview_default.png" alt="Spendzi calendar and expense totals in the Default theme" width="360" height="780" loading="lazy"></div>
+                        <figcaption>Default</figcaption>
+                    </figure>
+                    <figure class="reveal">
+                        <div class="phone"><img src="/Assets/Preview_leaves.png" alt="Spendzi calendar and expense totals in the Leaves theme" width="360" height="780" loading="lazy"></div>
+                        <figcaption>Leaves</figcaption>
+                    </figure>
+                    <figure class="reveal">
+                        <div class="phone"><img src="/Assets/Preview_spring.png" alt="Spendzi calendar and expense totals in the Spring theme" width="360" height="780" loading="lazy"></div>
+                        <figcaption>Spring</figcaption>
+                    </figure>
+                    <figure class="reveal">
+                        <div class="phone"><img src="/Assets/Preview_pink.png" alt="Spendzi calendar and expense totals in the Pink theme" width="360" height="780" loading="lazy"></div>
+                        <figcaption>Pink</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top:0" aria-labelledby="privacy-title">
+            <div class="container">
+                <div class="privacy-callout reveal">
+                    <span class="icon-bubble"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
+                    <div>
+                        <h2 id="privacy-title">Your money is your business</h2>
+                        <p>Spendzi keeps your expenses on your phone. We don't run servers that store your data, we don't show ads and we don't track you.</p>
+                        <a class="btn btn-app" href="/spendzi/privacy/">
+                            Read the privacy policy
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h2>Need help with Spendzi?</h2>
+                    <p>Found a bug or have an idea? Send us an email and we'll get back to you.</p>
+                </div>
+                <div class="footer-links">
+                    <div>
+                        <h3>Contact</h3>
+                        <ul>
+                            <li><a href="mailto:tinypocketstudio@gmail.com?subject=Spendzi"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>tinypocketstudio@gmail.com</a></li>
+                            <li><a href="https://www.instagram.com/tinypocket.studio/" rel="me noopener"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg>Instagram</a></li>
+                            <li><a href="https://www.tiktok.com/@tinypocketstudio" rel="me noopener"><svg class="icon icon-fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>TikTok</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Spendzi</h3>
+                        <ul>
+                            <li><a href="/spendzi/privacy/">Privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Studio</h3>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/privacy/">All privacy policies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tiny Pocket Studio · Made with care in Sweden</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
