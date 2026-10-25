@@ -485,6 +485,15 @@ a {
     gap: 16px;
 }
 
+/* Wide store banner used as the featured app's art */
+.featured-banner {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: var(--shadow-2);
+}
+
 /* Phone frame used for screenshots and placeholders */
 .phone {
     width: 200px;
